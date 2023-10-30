@@ -11,4 +11,6 @@ int main()
     } else {
         printf("Większa liczba to: %d \n", b);
     }
+
+    return 0;
 }

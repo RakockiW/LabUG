@@ -11,4 +11,6 @@ int main() {
     } else {
         printf("Z tych odcinków nie da się utworzyć trójkąta. \n");
     }
+
+    return 0;
 }

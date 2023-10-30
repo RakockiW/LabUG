@@ -11,4 +11,6 @@ int main() {
     } else {
         printf("Rok nie jest przestępny \n");
     }
+
+    return 0;
 }

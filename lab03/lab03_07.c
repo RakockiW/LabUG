@@ -29,4 +29,6 @@ int main() {
     {
         printf("Data jest niepoprawna. \n");
     }
+
+    return 0;
 }

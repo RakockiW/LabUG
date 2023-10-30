@@ -20,4 +20,6 @@ int main()
 
     int modulo = a % b;
     printf("Reszta z dzielenia: %d\n", modulo);
+
+    return 0;
 }

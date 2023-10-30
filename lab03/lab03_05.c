@@ -23,4 +23,6 @@ int main()
     } else {
         printf("Wpisany znak nie jest literą alfabetu. \n");
     }
+
+    return 0;
 }
