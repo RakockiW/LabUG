@@ -10,4 +10,6 @@ int main()
     rad = (float)kat / 180;
 
     printf("Wartość kąta w radianach wynosi %f Pi rad.", rad);
+
+    return 0;
 }
