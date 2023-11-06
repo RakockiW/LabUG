@@ -7,8 +7,6 @@ int main() {
     
     scanf("%d", &n);
     
-    double pierwiastek = sqrt(n); 
-
     int reszta;
 
     for (int i=2; i <= sqrt(n); i++) {
