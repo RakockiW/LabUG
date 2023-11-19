@@ -3,6 +3,8 @@
 int przekroj_a3(int a1, int b1, int a2, int b2) {
     if (a2 > a1 && a2 < b1) {
         return a2;
+    } else if (a1 > a2 && a1 < b2) {
+        return a1;
     } else {
         return -1;
     }
