@@ -15,7 +15,7 @@ int main(){
 
     printf("Podaj dwa odcinki: \n");
     scanf("%d %d %d %d", &a1, &b1, &a2, &b2);
-    int a3 = przekroj(a1, b1, a2, b2);
+    int a3 = przekroj_a3(a1, b1, a2, b2);
     if (a3 > -1) {
         printf("a3 = %d\n", a3);
     } else {
