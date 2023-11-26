@@ -1,26 +1,21 @@
 #include <stdio.h>
 
-void wypisywanie(int n, int liczba) {
-    
+int wypisywanie(int n) {
 
-    if (liczba == n) {
-        printf("%d\n", liczba);
+     if (n == 1) {
+        printf("%d ", n);
     } else {
-        printf("%d ", liczba);
-        wypisywanie(n, liczba+1);
-    }
-    
+        wypisywanie(n-1);
+        printf("%d ", n);  
+    } 
     
 }
 
 int main() {
 
     int n;
-    int liczba = 1;
     printf("Podaj liczbę: \n");
     scanf("%d", &n);
-    wypisywanie(n, liczba);
-
-
+    wypisywanie(n);
     return 0;
 }
