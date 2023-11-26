@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int wypisywanie(int n, int liczba) {
+void wypisywanie(int n, int liczba) {
     
 
     if (liczba == n) {
