@@ -16,10 +16,11 @@ int najwiekszy_element(int *tab, int rozmiar) {
 int main() {
 
     int tab[4] = {1, 6, 3, 4};
+    int *wsk = tab;
     int rozmiar = sizeof(tab) / sizeof(tab[0]);
-    printf("Największy element tablicy to: %d\n", najwiekszy_element(tab, rozmiar));
+    printf("Największy element tablicy to: %d\n", najwiekszy_element(wsk, rozmiar));
     for (int i = 0; i < rozmiar; i++) {
-        printf("%d element tablicy to: %d\n", i, *(tab+i));
+        printf("%d element tablicy to: %d\n", i+1, *(tab+i));
     }
     return 0;
 }
