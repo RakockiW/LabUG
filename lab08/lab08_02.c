@@ -7,7 +7,7 @@ int przeszukiwanie_binarne(int tab[ROZMIAR], int n) {
     int right = ROZMIAR;
     int result = 0;
     while (left <= right) {
-        int middle = floor((left + right) / 2);
+        int middle = (left + right) / 2;
         if (tab[middle] < n) {
             left = middle + 1;
         } else if (tab[middle] > n) {
