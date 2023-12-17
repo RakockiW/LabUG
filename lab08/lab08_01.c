@@ -3,7 +3,7 @@
 
 int przeszukiwanie_liniowe(int tab[ROZMIAR], int n) {
     int wynik = 0;
-    for (int i = 0; i <= ROZMIAR; i++) {
+    for (int i = 0; i < ROZMIAR; i++) {
         if (tab[i] == n) {
             wynik = 1;
             return wynik;
