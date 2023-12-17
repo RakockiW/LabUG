@@ -4,7 +4,7 @@
 
 int przeszukiwanie_binarne(int tab[ROZMIAR], int n) {
     int left = 0;
-    int right = ROZMIAR;
+    int right = ROZMIAR-1;
     int result = 0;
     while (left <= right) {
         int middle = (left + right) / 2;
@@ -22,7 +22,7 @@ int przeszukiwanie_binarne(int tab[ROZMIAR], int n) {
 
 int main() {
     int tab[ROZMIAR] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int n = 13;
+    int n = 11;
     if (przeszukiwanie_binarne(tab, n)) {
         printf("True\n");
     } else {

@@ -14,7 +14,7 @@ int przeszukiwanie_liniowe(int tab[ROZMIAR], int n) {
 
 int main() {
     int tab[ROZMIAR] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    int n = 5;
+    int n = 10;
     if (przeszukiwanie_liniowe(tab, n)) {
         printf("True\n");
     } else {
