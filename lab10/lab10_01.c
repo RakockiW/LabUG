@@ -9,5 +9,7 @@ int main() {
         printf("Plik plik.txt istnieje.\n");
     }
 
+    fclose(fp);
+
     return 0;
 }
