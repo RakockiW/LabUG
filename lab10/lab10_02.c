@@ -7,7 +7,7 @@ int main() {
     FILE *fp = fopen(name, "r");
     
     if (fp == NULL) {
-        printf("Plik plik.txt nie istnieje.\n");
+        printf("Plik %s nie istnieje.\n", name);
         return 0;
     }
 
