@@ -1,0 +1,4 @@
+znak = O
+czy_pusty = 1
+wys = 10
+szer = 10
