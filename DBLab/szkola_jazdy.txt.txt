@@ -1,0 +1,2 @@
+Na jednej lekcji jazdy może być jeden lub wielu kursantów oraz jeden instruktor. Każdy samochód może być używany do wielu lekcji. 
+Liczba godzin wyjeżdzonych przez kursanta może być wyliczona poprzez sprawdzenie ile lekcji odbył. 
