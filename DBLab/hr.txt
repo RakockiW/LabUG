@@ -1,0 +1,1 @@
+Każdy kraj posiada jedną lub wiele lokalizacji. Każda lokalizacja posiada jeden lub wiele działów. Każdy dział posiada wiele stanowisk. Każdy pracownik zajmuje jedno stanowisko. Każdy pracownik posiada jedną lub wiele kwalifikacji (ukończone kursy specjalistyczne). 
