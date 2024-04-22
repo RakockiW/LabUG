@@ -11,14 +11,13 @@ CREATE TABLE lokalizacja
     kod_pocztowy        char(6)         	NOT NULL,
     miasto              varchar(32)     	NOT NULL,
     ulica               varchar(32)     	NOT NULL,
-    nr_budynku          char(6)         	NOT NULL,
-    CONSTRAINT          lokalizacja_id_pk 	PRIMARY KEY(id)
+    nr_budynku          char(6)         	NOT NULL
 );
 
 CREATE TABLE dzial
 (
     id                  char(6)          	PRIMARY KEY,
-    nazwa               varchar(32)     	NOT NULL,
+    nazwa               varchar(32)     	NOT NULL
 );
 
 CREATE TABLE kandydat
@@ -94,7 +93,7 @@ CREATE TABLE kwalifikacje
 	CONSTRAINT			pracownik_id_fk
 						FOREIGN KEY (pracownik_id)
 						REFERENCES	pracownik(id)
-						ON UPDATE CASCADE ON DELETE CASCADE
+						ON UPDATE CASCADE ON DELETE CASCADE,
 	CONSTRAINT			kurs_id_fk
 						FOREIGN KEY (kurs_id)
 						REFERENCES	kurs(id)
@@ -109,7 +108,7 @@ CREATE TABLE przypisanie_projekt
 	CONSTRAINT			pracownik_id_fk
 						FOREIGN KEY (pracownik_id)
 						REFERENCES	pracownik(id)
-						ON UPDATE CASCADE ON DELETE CASCADE
+						ON UPDATE CASCADE ON DELETE CASCADE,
 	CONSTRAINT			projekt_id_fk
 						FOREIGN KEY (projekt_id)
 						REFERENCES	projekt(id)
