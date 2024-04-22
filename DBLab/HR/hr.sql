@@ -45,7 +45,7 @@ CREATE TABLE stanowisko
 	id					char(6)				PRIMARY KEY,
 	nazwa				varchar(32)			NOT NULL,
 	opis				varchar(32)			NOT NULL,
-	wynagrodzenie 		int(10)				NOT NULL
+	wynagrodzenie 		int					NOT NULL
 );
 
 CREATE TABLE umowa
@@ -96,7 +96,7 @@ CREATE TABLE kwalifikacje
 						ON UPDATE CASCADE ON DELETE CASCADE,
 	CONSTRAINT			kurs_id_fk
 						FOREIGN KEY (kurs_id)
-						REFERENCES	kurs(id)
+						REFERENCES	kursy_specjalistyczne(id)
 						ON UPDATE CASCADE ON DELETE CASCADE
 );
 
@@ -119,7 +119,7 @@ CREATE TABLE ocena_pracownicza
 (
 	id					char(6)				PRIMARY KEY,
 	id_pracownika		char(6)				NOT NULL,
-	ocena				int(1)				NOT NULL,
+	ocena				int					NOT NULL,
 	komentarz			varchar(32)			NOT NULL,
 	data_oceny			date				NOT NULL
 	CONSTRAINT			id_pracownika_fk
