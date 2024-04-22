@@ -1,0 +1,60 @@
+Każdy kraj posiada jedną lub wiele lokalizacji. Każda lokalizacja posiada wiele działów. Każdy dział posiada wiele stanowisk. Każdy pracownik zajmuje jedno stanowisko. Każdy pracownik posiada zero lub wiele kwalifikacji (ukończone kursy specjalistyczne). Każdy pracownik ma przypisaną ocenę pracowniczą. Każdy pracownik ma przypisaną umowę. Każdy pracownik jest przypisany do jednego projektu. Każdy dział posiada zero lub wiele rekrutacji. Każda rekrutacja ma jednego kandydata.
+
+
+Kraj:
+- Nazwa kraju
+- id Kraju
+
+Lokalizacja:
+- jednostka administracyjna
+- miasto
+- ulica
+- kod pocztowy
+- id lokalizacji
+
+Dział:
+- id działu
+- nazwa działu
+
+Stanowisko:
+- id stanowiska
+- nazwa stanowiska
+- wynagrodzenie
+- opis obowiązków
+
+Rekrutacja:
+- id
+- dane kandydata
+- etapy rekrutacji
+- decyzja
+
+Pracownik:
+- imię
+- nazwisko
+- data urodzenia
+- płeć
+- adres zamieszkania
+- adres email
+- id
+
+Umowa:
+- data rozpoczęcia
+- data zakończenia
+- rodzaj umowy
+- id
+
+Ukończone kursy specjalistyczne:
+- id
+- nazwa szkolenia
+- data szkolenia
+
+Ocena pracownicza:
+- id
+- ocena
+- komentarze
+- data oceny
+
+Projekt:
+- id 
+- nazwa projektu
+- status projektu
