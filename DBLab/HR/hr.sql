@@ -53,7 +53,7 @@ CREATE TABLE umowa
 	id 					char(6)				PRIMARY KEY,
 	data_rozpoczecia	date				NOT NULL,
 	data_zakonczenia	date				,
-	rodzaj_umowy		varchar(32)			,
+	rodzaj_umowy		varchar(32)			
 );
 
 CREATE TABLE projekt
@@ -118,12 +118,12 @@ CREATE TABLE przypisanie_projekt
 CREATE TABLE ocena_pracownicza
 (
 	id					char(6)				PRIMARY KEY,
-	id_pracownika		char(6)				NOT NULL,
+	pracownik_id		char(6)				NOT NULL,
 	ocena				int					NOT NULL,
 	komentarz			varchar(32)			NOT NULL,
-	data_oceny			date				NOT NULL
-	CONSTRAINT			id_pracownika_fk
-						FOREIGN KEY (id_pracownika)
+	data_oceny			date				NOT NULL,
+	CONSTRAINT			pracownik_id_fk
+						FOREIGN KEY (pracownik_id)
 						REFERENCES pracownik(id)
 						ON UPDATE CASCADE ON DELETE CASCADE
 );
